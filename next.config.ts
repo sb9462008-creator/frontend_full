@@ -22,6 +22,10 @@ const contentSecurityPolicy = [
 const nextConfig: NextConfig = {
   poweredByHeader: false,
   reactStrictMode: true,
+  images: {
+    domains: ["images.unsplash.com"],
+    minimumCacheTTL: 3600,
+  },
   allowedDevOrigins: [
     "josh-studios-mesh-findings.trycloudflare.com",
     "agent-diffs-stuffed-tone.trycloudflare.com",
